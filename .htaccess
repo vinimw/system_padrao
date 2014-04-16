@@ -1,0 +1,21 @@
+Options +FollowSymLinks
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+<Files .*>
+	Order Deny,Allow
+	Deny From All
+</Files>
+
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/system_padrao/$0 [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^system.*
+RewriteRule ^(.*)$ /system_padrao/index.php/$0 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ system_padrao/index.php/$0 [L]
+</IfModule>
+Options -Indexes
