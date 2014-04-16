@@ -61,9 +61,6 @@ class Perfil extends CI_controller {
 		}
 		
 
-
-		
-
 		$idaltera = $this->UsuarioM->update($itens,$userid);
 
 		if($idaltera){
