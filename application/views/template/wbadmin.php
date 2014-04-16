@@ -72,7 +72,7 @@ if( ($VER_userid == FALSE) and ($VER_username == FALSE) and ($VER_useremail == F
 
 	<div class="top-link"></div>
 	<a class="top-link" href="<?php echo base_url('wbadmin/sair'); ?>"><img src="<?php echo base_url('assets/images/logout.png'); ?>" /></a>
-	<a class="top-link no-mobile" href="#"><img src="<?php echo base_url('assets/images/gear.png'); ?>" /></a>
+	<a class="top-link no-mobile" href="<?php echo base_url('wbadmin/perfil'); ?>"><img src="<?php echo base_url('assets/images/gear.png'); ?>" /></a>
 
 	<div class="top-user no-mobile"><img src="<?php echo base_url('assets/images/user.png'); ?>"> <?php echo $this->session->userdata('USER_NAME'); ?></div>
 </div>  

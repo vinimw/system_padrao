@@ -67,23 +67,7 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
-$db['cliente'] = $db['default'];
-$db['cliente']['hostname'] = 'localhost';
-$db['cliente']['username'] = 'root';
-$db['cliente']['database'] = 'honda_cliente';
-$db['cliente']['password'] = '';
 
-$db['vendedor'] = $db['default'];
-$db['vendedor']['hostname'] = 'localhost';
-$db['vendedor']['username'] = 'root';
-$db['vendedor']['database'] = 'honda_vendedor';
-$db['vendedor']['password'] = '';
-
-$db['encinterativa'] = $db['default'];
-$db['encinterativa']['hostname'] = 'localhost';
-$db['encinterativa']['username'] = 'root';
-$db['encinterativa']['database'] = 'system';
-$db['encinterativa']['password'] = '';
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */

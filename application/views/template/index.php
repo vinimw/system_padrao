@@ -8,23 +8,39 @@
         <meta name="description" content="<?php echo $description ?>" />
         <meta name="keywords" content="<?php echo $keywords ?>" />
         
+<link href="<?php echo base_url('assets/images/favicon.ico'); ?>" rel="shortcut icon" type="image/ico" />
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
-<script src="<?php echo base_url('assets/js/plugins.js'); ?>"  type="text/javascript"></script>
-<script src="http://www.google.com/jsapi"  ></script>
-<script src="<?php echo base_url('assets/js/jquery.uniform.min.js'); ?>"  ></script>
-
+<script src="<?php echo base_url('assets/js/plugins.js'); ?>" type="text/javascript"></script>
+<script src="http://www.google.com/jsapi" ></script>
+<script src="<?php echo base_url('assets/js/jquery.uniform.min.js'); ?>" ></script>
 
 <!--[if lt IE 9]>
-<link href="<?php echo base_url('assets/css/style-min.css'); ?>" rel="stylesheet" type="text/css" />
+<link href="css/style-min.css" rel="stylesheet" type="text/css" />
 <![endif]-->
-<link href="<?php echo base_url('assets/css/style-min.css'); ?>" rel="stylesheet" type="text/css" />
-
-<!--<link rel="stylesheet/less" type="text/css" href="<?php echo base_url('assets/css/style.less'); ?>" />
-<script src="<?php echo base_url('assets/js/less.js'); ?>"  type="text/javascript"></script>-->
+<link rel="stylesheet/less" type="text/css" href="<?php echo base_url('assets/css/style.less'); ?>" />
+<script src="<?php echo base_url('assets/js/less.js'); ?>" type="text/javascript"></script>
 <link rel="stylesheet" href="<?php echo base_url('assets/themes/aristo/css/uniform.aristo.min.css'); ?>" media="screen" />
 
-<script type="text/javascript"  src="<?php echo base_url('assets/js/jquery-ui-1.8.20.custom.min.js'); ?>"></script>
-<script type="text/javascript"  src="<?php echo base_url('assets/js/jquery.maskedinput.min.js'); ?>"></script>
+
+
+<script type="text/javascript" src="<?php echo base_url('assets/js/jquery-ui-1.8.20.custom.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/jquery.maskedinput.min.js'); ?>"></script>
+<!-- ckeditor -->
+<script type="text/javascript" src="<?php echo base_url('assets/ck/ckeditor.js'); ?>"></script>
+
+<!-- progresso -->
+<script type="text/javascript" src="<?php echo base_url('assets/js/progress_bar.js'); ?>"></script>
+
+<script type="text/javascript" src="<?php echo base_url('assets/js/acoes.js'); ?>"></script>
+
+<!-- datepicker -->
+<link href="<?php echo base_url('assets/css/jquery.ui.datepicker.css'); ?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url('assets/css/jquery-ui.css'); ?>" rel="stylesheet" type="text/css" />
+<script src="<?php echo base_url('assets/js/jquery.ui.datepicker.js'); ?>"  ></script>
+
+<!-- jquery Table -->
+<script type="text/javascript" language="javascript" src="<?php echo base_url('assets/js/jquery.dataTables.js'); ?>"></script>
+<script type="text/javascript" language="javascript" src="<?php echo base_url('assets/js/table-managed.min.js'); ?>"></script>
 
 
 <meta name="viewport" content="width=device-width"/>
@@ -87,11 +103,6 @@
 
 </div>
 
-
-<!-- jquery Table -->
-<script type="text/javascript"  language="javascript" src="<?php echo base_url('assets/js/jquery.dataTables.min.js'); ?>"></script>
-<script type="text/javascript"  language="javascript" src="<?php echo base_url('assets/js/table-managed.min.js'); ?>"></script>
-<script src="<?php echo base_url('assets/js/acoes.js'); ?>"  type="text/javascript"></script>
 
 	<?php $mensagem = $this->session->flashdata('msg') ?>
 	<?php $mensagem = isset($validation)?$validation:$mensagem ?>

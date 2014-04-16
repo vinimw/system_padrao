@@ -10,7 +10,7 @@
  * 
  * @copyright 2013 ENC Interativa
  */
-class ENC_Model extends CI_Model {
+class WB_Model extends CI_Model {
 
 	var $_table_name	= null;
 	var $_name 			= null;

@@ -106,7 +106,7 @@ $config['enable_hooks'] = FALSE;
 | http://codeigniter.com/user_guide/general/creating_libraries.html
 |
 */
-$config['subclass_prefix'] = 'ENC_';
+$config['subclass_prefix'] = 'WB_';
 
 
 /*
@@ -294,8 +294,8 @@ $config['global_xss_filtering'] = FALSE;
 | 'csrf_expire' = The number in seconds the token should expire.
 */
 $config['csrf_protection'] = TRUE;
-$config['csrf_token_name'] = 'csrf_interativa';
-$config['csrf_cookie_name'] = 'csrf_cookie_enc';
+$config['csrf_token_name'] = 'csrf_weber';
+$config['csrf_cookie_name'] = 'csrf_cookie_wb';
 $config['csrf_expire'] = 7200;
 
 /*
